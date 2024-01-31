@@ -1,0 +1,18 @@
+// @mixin--> untuk membuat fungsi yg dapat digunakan berkali-kali
+// @include --> untuk menggunakan fungsi yang telah dibuat dari @mixin
+// extend --> untuk mewarisi suatu set propertiCSS dari suatu sektor ke sektor lain --> menggunakan @extend --> % sebagai placeholder
+
+@mixin textinput() {
+    background-color: transparent;
+    padding: 20px 0;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+#contact {
+  .input-form {
+    input{ 
+        @include textinput();
+    }
+  }
+}

@@ -1,0 +1,58 @@
+#aboutme {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: #1a11a1;
+}
+#aboutme .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+#aboutme .title button {
+  background-color: #5655da;
+}
+#aboutme .title button :focus {
+  background-color: #aaa;
+}
+
+.aboutextend .child {
+  font-size: 10px;
+  color: #bbb;
+}
+
+.aboutextend {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+#contact .input-form input {
+  background-color: transparent;
+  padding: 20px 0;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #5352d4;
+  color: #1a11a1;
+}
+
+main {
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 30;
+  letter-spacing: 1px;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary: #5352d4;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -61,7 +66,7 @@ input[type="text"] {
 }
 
 body {
-  background-color: #5352d4;
+  background-color: var(--primary);
 }
 
 aside {

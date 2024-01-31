@@ -1,0 +1,38 @@
+// ekstensi :
+// .sass (menggunakan penulisan sass, menggunakan indentasi, tidak menggunakan kurung kurawal dan titik koma)
+// .scss (menggunakan penulisan seperti css)
+// cara compile otomatis --> sass --watch file.sass outFolder/namaFileOutput.css
+// --watch --> melihat semua perubahan dam langsung melakukan compile otomatis
+// @use 'namafile' --> untuk import file.scss lain
+//  @use "saas:math"; --> untuk melakukan operasi matematika --> contoh math.ceil();, math.floor();, math.abs();, math.div();
+
+@use 'aboutme';
+@use 'contact';
+@use "sass:math";
+
+$primary: #5352d4;
+$secondary: #fff;
+$a: 10;
+$b: 20;
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: $primary;
+  color: aboutme.$color;
+}
+
+main {
+  background-color: $secondary;
+  font-size: 14px;
+  line-height: $a + $b;
+  letter-spacing: 1px;
+}

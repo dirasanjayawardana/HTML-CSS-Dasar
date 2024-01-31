@@ -1,0 +1,41 @@
+// @mixin--> untuk membuat fungsi yg dapat digunakan berkali-kali
+// @include --> untuk menggunakan fungsi yang telah dibuat dari @mixin
+// extend --> untuk mewarisi suatu set propertiCSS dari suatu sektor ke sektor lain --> menggunakan @extend --> % sebagai placeholder(templateny)
+
+@mixin focusbutton($color: #fff) {
+  background-color: $color;
+}
+
+$color: #1a11a1;
+
+#aboutme {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: $color;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    button {
+      background-color: #5655da;
+      :focus {
+        @include focusbutton(#aaa);
+      }
+    }
+  }
+}
+
+%p {
+  font-size: 10px;
+  color: #bbb;
+}
+
+.aboutextend {
+  .child {
+    @extend %p;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
